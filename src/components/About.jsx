@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-[#101010] rounded-xl flex flex-col gap-2 p-4 border-[#1e1e1e] border-[1px]">
+    <div className="bg-[#101010] rounded-xl h-full flex flex-col gap-2 p-4 border-[#1e1e1e] border-[1px]">
       <div className="flex items-center w-fit bg-[#141414] border-[#1e1e1e] rounded-2xl gap-1 py-[2px] px-2 pr-3 border-[1px] ">
         <span className=" bg-[#ffffff1c] p-1 rounded-full">
           <div className="bg-[#916ce7] w-3 h-3 rounded-full"></div>
