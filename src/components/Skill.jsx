@@ -15,7 +15,7 @@ function Skill() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3  xl:grid-cols-4 gap-2  ">
         {Skills.map((item, index) => (
-          <p key={index} className="bg-[#191919]  w-full text-[#cccccc] px-2 py-2 flex items-center gap-2 rounded-md font-normal text-sm">
+          <p key={index} className="bg-[#191919]  w-full text-[#cccccc] px-2 py-2 flex items-center gap-2 rounded-lg font-normal text-sm">
 
             <span className="bg-[#282828] rounded-md p-[2px]  ">
               {item.icon}
