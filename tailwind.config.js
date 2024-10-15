@@ -19,7 +19,8 @@ export default {
         shade_4:"#282828",
         shade_5:"#CCCCCC",
         shade_6:"#FFFFFF",
-        shade_7:"#101010"
+        shade_7:"#101010",
+        shade_8:"#141414"
       },
     }, 
   },
