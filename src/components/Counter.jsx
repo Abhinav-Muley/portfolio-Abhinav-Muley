@@ -48,7 +48,7 @@ function Counter() {
       </div>
       <div className="flex flex-col gap-2 h-28 rounded-xl p-2 border-[#1e1e1e] border-[1px] bg-[#101010] grow shrink basis-[100px] justify-center items-center">
         <p className="bg-gradient-to-t from-black to-white text-transparent bg-clip-text text-5xl flex items-center font-normal">
-          02
+          03
           <svg
             className="text-[#916ce7]"
             xmlns="http://www.w3.org/2000/svg"

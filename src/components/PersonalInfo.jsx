@@ -4,12 +4,12 @@ import { tags } from "../data/Tags";
 
 function PersonalInfo() {
   return (
-    <div className="bg-[#101010] border-[#1e1e1e] border-[1px]  flex flex-col gap-5 p-5 rounded-xl ">
-      <div className="flex flex-wrap gap-2 justify-center w-full">
-        <div className="bg-[#916CE1] grow shrink basis-[120px] max-w-28 flex aspect-square justify-center rounded-xl">
-          <img className=" " src={profile} alt="" />
+    <div className="bg-[#101010] border-[rgb(30,30,30)] border-[1px]  flex flex-col gap-5 p-5 rounded-xl ">
+      <div className="flex flex-wrap gap-5 justify-center w-full">
+        <div className="bg-[#916CE1] grow shrink basis-[120px] max-w-28 flex aspect-square justify-center rounded-xl overflow-hidden">
+          <img className=" w-full h-full" src={profile} alt="" />
         </div>
-        <div className=" grow shrink basis-[300px]  w-full flex-col flex gap-2 ">
+        <div className=" grow shrink basis-[300px]  w-full flex-col flex gap-2">
           <div className="flex flex-wrap gap-2 justify-between ">
             <div className="border-[#1e1e1e] border-[1px] rounded-2xl px-3 py-1 flex items-center">
               <span className=" bg-[#ffffff1c] p-1 rounded-full">
@@ -86,7 +86,7 @@ function PersonalInfo() {
                 ></path>
               </g>
             </svg>
-            <span className="text-[#cccccc]"> Siddhant Bilange</span>
+            <span className="text-[#cccccc]">Siddhant Bilange</span>
           </div>
         </a>
         <a

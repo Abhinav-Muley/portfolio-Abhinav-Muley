@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* @font-face {
+  font-family: "ExtraLight";
+  src: url("../public/Manrope/static/Manrope-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Light";
+  src: url("../public/Manrope/static/Manrope-Light.ttf");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("../public/Manrope/static/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("../public/Manrope/static/Manrope-Medium.ttf");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: url("../public/Manrope/static/Manrope-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("../public/Manrope/static/Manrope-Bold.ttf");
+}
+
+@font-face {
+  font-family: "ExtraBold";
+  src: url("../public/Manrope/static/Manrope-ExtraBold.ttf");
+} */
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../public/Manrope/Manrope.ttf");
+}
+
+
+body {
+  background-color: #050505;
+  font-family: "Manrope", "sans-serif";
+}

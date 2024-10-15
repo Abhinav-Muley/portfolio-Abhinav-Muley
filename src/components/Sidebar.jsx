@@ -11,7 +11,7 @@ function Sidebar() {
             width="1.2rem"
             height="1.2rem"
             viewBox="0 0 24 24"
-            className="cursor-pointer text-[#cccccc] "
+            className="p-1 w-10 h-10 flex justify-center items-center text-shade_5 bg-shade_3 rounded-lg cursor-pointer"
             onClick={()=>setfirst((prev)=>!prev)}
           >
             <path
@@ -21,7 +21,7 @@ function Sidebar() {
           </svg>
         ) : (
           <svg
-            className="text-[#cccccc] cursor-pointer"
+            className="p-1 w-10 h-10 flex justify-center items-center text-shade_5 bg-shade_3 rounded-lg cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="1.2rem"
             height="1.2rem"
@@ -38,7 +38,7 @@ function Sidebar() {
         )}
       </div>
       <div className=" flex flex-col max-[400px]:flex-row gap-2">
-        <span className="p-2 w-5 h-5 aspect-square cursor-pointer bg-[#1e1e1e] rounded-full">
+        <span className="p-1 w-10 h-10 flex justify-center items-center aspect-square cursor-pointer text-shade_5 bg-shade_3 rounded-full">
           <svg
             className="text-[#cccccc]"
             xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ function Sidebar() {
             ></path>
           </svg>
         </span>
-        <span className="p-2 w-5 h-5 aspect-square cursor-pointer bg-[#1e1e1e] rounded-full">
+        <span className="p-1 w-10 h-10 flex justify-center items-center aspect-square cursor-pointer bg-[#1e1e1e] rounded-full">
           <svg
             className="text-[#cccccc]"
             xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ function Sidebar() {
             ></path>
           </svg>
         </span>
-        <span className="p-2 w-5 h-5 aspect-square cursor-pointer bg-[#1e1e1e] rounded-full">
+        <span className="p-1 w-10 h-10 flex justify-center items-center aspect-square cursor-pointer bg-[#1e1e1e] rounded-full">
           <svg
             className="text-[#cccccc]"
             xmlns="http://www.w3.org/2000/svg"
