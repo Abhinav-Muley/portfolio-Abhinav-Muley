@@ -38,13 +38,109 @@
   src: url("../public/Manrope/static/Manrope-ExtraBold.ttf");
 } */
 
+:root {
+  --PhoneInputCountryFlag-aspectRatio: 1.333;
+}
+
+
 @font-face {
   font-family: "Manrope";
-  src: url("../public/Manrope/Manrope.ttf");
+  src: url("/Manrope/Manrope.ttf");
 }
+
+@font-face {
+  font-family: "MuseoModerno";
+  src: url("/MuseoModerno/MuseoModerno-VariableFont_wght.ttf");
+}
+
+
 
 
 body {
   background-color: #050505;
   font-family: "Manrope", "sans-serif";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ .custom-cursor {
+ cursor: url(../src/assets/cursor.png), auto;
+ }
+ 
+ ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(130, 130, 130);
+}
+
+
+
+ /* Example: A simple fade-in animation */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    margin-top: 50vh;
+  }
+  to {
+    margin-top: 0vh;
+  }
+}
+
+
+/* Model box in contact us page */
+
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  animation: slideIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

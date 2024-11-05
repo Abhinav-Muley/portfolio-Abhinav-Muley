@@ -1,14 +1,28 @@
-import React from 'react'
-import Home from './pages/Home'
-import Sidebar from './components/Sidebar'
+import React,{useEffect} from "react";
+import { Route, Routes } from "react-router-dom";
+import Main from "./Layout/Main";
+import Home from "../src/pages/Home";
+import Contact from "../src/pages/Contact";
+import Project from "./pages/Project";
+import Casestudy from "./pages/Casestudy";
 
-function App() {
-  return (
-    <div className=' p-5 md:p-10 flex flex-col lg:flex-row gap-4 max-w-[1600px] relative '>
-      <Sidebar />
-      <Home />
-    </div>
-  )
-}
+const App = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-export default App
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<Main />}>
+                    <Route path="/" index element={<Home />} />
+                    <Route path="/Project" element={<Project />} />
+                    <Route path="/Contact" element={<Contact />} />
+                    <Route path="/Casestudy" element={<Casestudy/>} />
+                </Route>
+            </Routes>
+        </>
+    );
+};
+
+export default App;

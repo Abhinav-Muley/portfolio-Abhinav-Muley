@@ -10,7 +10,7 @@ function About() {
         <p className="text-shade_1 font-medium text-lg">About</p>
       </div>
       <div className="">
-        <div className="text-shade_5 text-lg font-light">
+        <div className="text-shade_5  text-sm md:text-lg font-light">
           I'm <strong className=" font-bold">Siddhant Bilange</strong>. I'm a <strong className=" font-bold">UX Designer</strong> with <strong className=" font-bold">1 Year</strong> of experience in
           creating intuitive and visually appealing digital experiences.
           <br /><br />
@@ -18,7 +18,7 @@ function About() {
           understanding user needs and behaviors to create functional and
           enjoyable designs.
           <br /><br />
-          I'm proficient in <strong className=" font-bold bg-gradient-to-r from-red-500 to-emerald-400 text-transparent bg-clip-text">Figma</strong> and have experience working
+          I'm proficient in <strong className=" font-bold bg-gradient-to-r from-red-400 to-emerald-400 text-transparent bg-clip-text">Figma</strong> and have experience working
           with <strong className=" font-bold">design system</strong>. I'm committed to delivering user-centered designs
           that enhance user satisfaction and drive business outcomes.
         </div>

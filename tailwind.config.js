@@ -8,9 +8,15 @@ export default {
 
     fontFamily: {
       Manrope: ["Manrope", "sans-serif"],
+      MuseoModerno: ["MuseoModerno", "sans-serif"],
     },
 
     extend: {
+
+      cursor: {
+        default: "url(../src/assets/cursor.png))",
+        pointer: "url(../src/assets/cursor.png))",
+      },
 
       colors:{ 
         shade_1:"#916CE7",
@@ -22,6 +28,10 @@ export default {
         shade_7:"#101010",
         shade_8:"#141414"
       },
+
+      animation: {
+        'ping': 'ping 1.3s linear infinite',
+      }
     }, 
   },
   plugins: [],
