@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import video from '../assets/connectfm/macbook.mp4'
-import img1 from '../assets/connectfm/Desktop Landing Page.png'
-import logo from '../assets/connectfm/logo.png'
+import img1 from '../../public/Case/Connectfm/Laptop/1.png'
+import logo from '../../public/Case/Connectfm/Laptop/logo.png'
 import '../index.css'
 
 function Case1() {
@@ -15,9 +15,9 @@ function Case1() {
     <>
       <section className=" grid gap-5  w-full bg-shade_5 overflow-hidden relative rounded-lg">
         {/* <div className="top"></div> */}
-        <div className="">
+        {/* <div className="">
           
-        </div>
+        </div> */}
         <div className=" absolute mx-auto top-1/4 z-0 w-full">
           <svg className=' md:w-[80%] mx-auto' viewBox="0 0 277 386" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.18">
@@ -41,7 +41,9 @@ function Case1() {
               <rect x="1" y="1" width="275" height="383.917" rx="135" stroke="#656565" stroke-width="2" />
             </g>
           </svg>
+
         </div>
+        <h1 className='absolute top-2  z-0 text-center text-4xl w-full'>Connectfm</h1>
         <div className="bottom mt-[14%] sm:mt-[10%] flex justify-center relative h-[40vh] sm:h-[70vh] md:h-[60vh] xl:h-[70vh] 2xl:h-[70vh]">
           <div id="elementToAnimate" className=" absolute w-3/4 sm:w-2/4 flex justify-center rounded-md shadow-lg  shadow-shade_3 z-20 ">
             <img src={img1} className="rounded-md" alt="" />

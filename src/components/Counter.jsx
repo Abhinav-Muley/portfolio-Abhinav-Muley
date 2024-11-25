@@ -5,7 +5,7 @@ function Counter() {
     <>
       <div className="flex flex-col gap-4">
         <div className="flex flex-row flex-wrap gap-4 w-full">
-          <div className="flex flex-col gap-2 h-28 rounded-xl p-2 border-shade_3 border-[1px]  bg-[#101010] grow shrink basis-[100px] justify-center items-center">
+          <div className=" bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 flex flex-col gap-2 h-28 rounded-xl p-2 grow shrink basis-[100px] justify-center items-center">
             <p className="bg-gradient-to-t from-black to-white text-transparent bg-clip-text text-5xl flex items-center font-normal">
               04
               <span className=" text-shade_1 text-4xl">+</span>
@@ -20,7 +20,7 @@ function Counter() {
               Projects
             </p>
           </div>
-          <div className="flex flex-col gap-2 h-28 rounded-xl p-2 border-shade_3 border-[1px] bg-[#101010] grow shrink basis-[100px] justify-center items-center">
+          <div className="bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 flex flex-col gap-2 h-28 rounded-xl p-2 grow shrink basis-[100px] justify-center items-center">
             <p className="bg-gradient-to-t from-black to-white text-transparent bg-clip-text text-5xl flex items-center font-normal">
               03
               <span className=" text-shade_1 text-4xl">+</span>
@@ -43,7 +43,7 @@ function Counter() {
               Happy Clients
             </p>
           </div>
-          <div className="hidden md:flex  flex-col gap-2 h-28 rounded-xl p-2 border-shade_3 border-[1px] bg-[#101010] grow shrink basis-[100px] justify-center items-center">
+          <div className="bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 hidden md:flex  flex-col gap-2 h-28 rounded-xl p-2 grow shrink basis-[100px] justify-center items-center">
             <p className="bg-gradient-to-t from-black to-white text-transparent bg-clip-text text-5xl flex items-center font-normal ">
               01
               <span className=" text-shade_1 text-4xl">+</span>
@@ -68,7 +68,7 @@ function Counter() {
           </div>
         </div>
 
-        <div className="md:hidden flex flex-col gap-2 h-28 rounded-xl p-2 border-shade_3 border-[1px]  bg-[#101010] grow shrink basis-[100px] justify-center items-center">
+        <div className=" bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 md:hidden flex flex-col gap-2 h-28 rounded-xl p-2 grow shrink basis-[100px] justify-center items-center">
           <p className="bg-gradient-to-t from-black to-white text-transparent bg-clip-text text-5xl flex items-center font-normal">
             01
             <span className=" text-shade_1 text-4xl">+</span>

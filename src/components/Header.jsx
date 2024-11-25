@@ -8,7 +8,7 @@ function Header() {
     <>
       <div className=" lg:w-auto mb-10 lg:mb-2 ">
         <div className=" px-3 lg:px-10 w-full flex z-50 fixed justify-center max-w-[1600px]">
-          <div className=" flex flex-row w-full  justify-between bg-shade_3 --backdrop-blur-sm --shadow-zinc-400 --bg-opacity-65  shadow-md shadow-shade_2 p-3 border-[rgb(30,30,30)] rounded-xl">
+          <div className=" flex flex-row w-full  justify-between bg-shade_2 border-[0.002px] border-shade_5 border-opacity-20 backdrop-blur-sm  bg-opacity-65  shadow-md --shadow-shade_2 p-3 rounded-xl">
             <div className=" ">
               {first ? (
                 <div className=" h-10 w-10 block lg:hidden">
@@ -43,19 +43,19 @@ function Header() {
                       </defs>
                     </svg>
                   </div>
-                  <ul className="text-lg text-shade_6 font-medium hidden lg:flex items-center gap-8 h-full ml-5">
+                  <ul className="text-lg text-shade_6 font-normal tracking-wide hidden lg:flex items-center gap-8 h-full ml-5">
                     <NavLink to="/Casestudy" className=" h-10 w-10 grid place-items-center">
                       <img src={logo} alt="" />
                     </NavLink>
 
                     <hr className=" bg-shade_5 w-[.1px] h-full" />
-                    <NavLink to="/" >
+                    <NavLink to="/" className=" text-shade_5 hover:text-shade_6 transition ease-in-out duration-150" >
                       Home
                     </NavLink>
-                    <NavLink to="/Project" >
+                    <NavLink to="/Project" className=" text-shade_5 hover:text-shade_6 transition ease-in-out duration-150">
                       Projects
                     </NavLink>
-                    <NavLink to="/Contact" >
+                    <NavLink to="/Contact" className=" text-shade_5 hover:text-shade_6 transition ease-in-out duration-150">
                       Contact
                     </NavLink>
                   </ul>

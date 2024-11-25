@@ -3,7 +3,7 @@ import React from 'react'
 function Services() {
     return (
         <>
-            <div className="flex flex-col gap-5 bg-shade_7 rounded-xl p-4 border-shade_3 border-[1px]">
+            <div className="flex flex-col gap-5 rounded-xl p-4 bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 ">
                 <div className="flex items-center gap-3 w-full">
                     <div className="">
                         <svg width="21" height="22" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">

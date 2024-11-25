@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import React from 'react'
-import InputBox from './InputBox'
 import emailjs from '@emailjs/browser';
+import Modal from '../components/Model';
+
 
 function Contact_Form() {
 
@@ -14,7 +15,6 @@ function Contact_Form() {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
   const [Phone, setPhone] = useState("")
   const [message, setMessage] = useState("");
 
@@ -22,7 +22,6 @@ function Contact_Form() {
     try {
       const templateParams = {
         email,
-        name,
         Phone,
         message,
       };
@@ -45,21 +44,22 @@ function Contact_Form() {
     sendEmail();
 
     setEmail("");
-    setName("");
     setPhone("");
     setMessage("");
 
     setIsFormVisible(false);
-    setIsModalVisible(true);
+		setIsModalVisible(true);
 
     setTimeout(() => {
       setIsFormVisible(true);
       setIsModalVisible(false);
-    }, 5000);
+    }, 3000);
+
+
   };
   return (
     <>
-      <div className="flex flex-col justify-center gap-5 bg-shade_7 rounded-xl p-5 md:p-10 border-shade_3 border-[1px]">
+      <div className="flex flex-col justify-center gap-5 rounded-xl p-5 md:p-10 bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 ">
 
         <div className="flex items-center gap-3 w-full">
           <h3 className=' text-shade_1 text-2xl md:text-4xl mb-5 font-semibold w-full'>Get in Touch</h3>
@@ -81,8 +81,17 @@ function Contact_Form() {
           </div>
 
           <div className="">
-            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-shade_5 text-opacity-80 tracking-wider">Phone Number</label>
-            <InputBox value={Phone} onChange={(e) => setPhone(e.target.Phone)} />
+            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-shade_5 text-opacity-80 tracking-wider">Mobile Number</label>
+            <input
+              placeholder="Enter Mobile number"
+              name="Phone"
+              id="Phone"
+              value={Phone}
+              onChange={(e) => setPhone(e.target.value)}
+              type="Phone"
+              autoComplete="off"
+              className='text-base rounded-lg bg-transparent border-[1px] focus:border-[.6px] border-shade_5 border-opacity-40  text-shade_5 placeholder-shade_5 placeholder-opacity-40 focus:border-shade_5 block w-full p-3' required />
+
           </div>
 
           <div className="">
@@ -94,7 +103,7 @@ function Contact_Form() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Type message here..."
               cols="30"
-              rows="1"
+              rows="2"
               className="text-base rounded-lg bg-transparent border-[1px] focus:border-[.6px] border-shade_5 border-opacity-40  text-shade_5 placeholder-shade_5 placeholder-opacity-40 focus:border-shade_5 block w-full h-full p-3"
               required
               autoComplete="off"
@@ -108,6 +117,8 @@ function Contact_Form() {
           </div>
         </form>
       </div>
+
+      <Modal isVisible={isModalVisible} />
     </>
   )
 }

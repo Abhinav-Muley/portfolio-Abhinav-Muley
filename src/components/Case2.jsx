@@ -1,7 +1,7 @@
 import React from "react";
 import video from '../assets/connectfm/macbook.mp4'
-import img1 from '../assets/connectfm/macbook-air-m2-still.png'
-import logo from '../assets/connectfm/logo.png'
+import img1 from '../../public/Case/Connectfm/Laptop/macbook-air-m2-still.png'
+import logo from '../../public/Case/Connectfm/Laptop/logo.png'
 
 function Case2() {
   return (

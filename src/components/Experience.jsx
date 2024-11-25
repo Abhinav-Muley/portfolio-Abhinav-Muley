@@ -2,7 +2,7 @@ import React from 'react'
 
 function Experience() {
   return (
-    <div className='bg-[#101010] rounded-xl p-4 h-full border-shade_3 border-[1px] w-full flex flex-col gap-5'>
+    <div className='bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 rounded-xl p-4 h-full w-full flex flex-col gap-5'>
       <div className="flex justify-center">
         <p className='text-shade_1 flex items-center gap-2 font-medium text-xl '>
           <svg className='w-5' viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,9 +15,9 @@ function Experience() {
       <div className=" main flex flex-col gap-5 text-lg">
         <div className=" ">
           <div className="flex items-center w-fit gap-2 py-[2px] px-2 pr-3 ">
-            <span className="p-1 rounded-full bg-shade_4">
+            {/* <span className="p-1 rounded-full bg-shade_4">
               <div className="bg-shade_1 w-3 h-3 rounded-full"></div>
-            </span>
+            </span> */}
             <p className="text-shade_1 font-semibold ">xScientist Tech LLP</p>
           </div>
           <ul className=' text-shade_5 list-disc mx-10 font-light  text-sm md:text-lg'>
@@ -34,9 +34,9 @@ function Experience() {
         </div>
         <div className="">
           <div className="flex items-center w-fit gap-2 py-[2px] px-2 pr-3 ">
-            <span className="p-1 rounded-full bg-shade_4">
+            {/* <span className="p-1 rounded-full bg-shade_4">
               <div className="bg-shade_1 w-3 h-3 rounded-full"></div>
-            </span>
+            </span> */}
             <p className="text-shade_1 font-semibold">Oasis Infobyte</p>
           </div>
           <ul className=' text-shade_5 list-disc mx-9 font-light  text-sm md:text-lg'>

@@ -3,7 +3,7 @@ import React from 'react'
 function Address() {
     return (
         <>
-            <div className="flex flex-col gap-5 bg-shade_7 rounded-xl p-4 border-shade_3 border-[1px]">
+            <div className="flex flex-col gap-5 bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 rounded-xl p-4 ">
                 <div className="flex items-center gap-3 w-full">
                     <div className="">
                         <svg width="17" height="22" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +15,7 @@ function Address() {
                 </div>
                 <div className="">
                     <div className="bg-shade_8 text-shade_5 gap-2 flex rounded-md p-3 text-base">
-                        Satara road, Chh. sambhajinagar, Maharashtra - 431002
+                        Satara road, Chh. Sambhajinagar, Maharashtra - 431002
                     </div>
                 </div>
             </div>

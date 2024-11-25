@@ -2,7 +2,7 @@ import React from "react";
 import { Skills } from "../data/Skills";
 function Skill() {
   return (
-    <div className="bg-shade_7 rounded-xl p-4  border-shade_3 border-[1px] w-full flex flex-col gap-5">
+    <div className="bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3 rounded-xl p-4 w-full flex flex-col gap-5">
       <div className="flex justify-center">
         <p className="text-shade_1 flex items-center gap-2 font-medium text-xl">
           <svg className='w-5' viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,9 +15,8 @@ function Skill() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3  xl:grid-cols-4 gap-2  ">
         {Skills.map((item, index) => (
-          <p key={index} className="bg-shade_3  w-full text-shade_5 px-2 py-2 flex items-center gap-2 rounded-lg font-normal  text-xs md:text-base">
-
-            <span className="bg-[#282828] rounded-md p-[2px]  ">
+          <p key={index} className="bg-gradient-to-r from-shade_3 to-shade_8 w-full text-shade_5 px-2 py-2 flex items-center gap-2 rounded-lg font-normal  text-xs md:text-base">
+            <span className=" rounded-md p-[2px]  ">
               {item.icon}
             </span>
             {item.text}
