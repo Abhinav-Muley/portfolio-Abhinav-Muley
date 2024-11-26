@@ -6,8 +6,8 @@ function PersonalInfo() {
   return (
     <div className="bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_3  flex flex-col gap-5 p-5 rounded-xl ">
       <div className="flex flex-wrap gap-5 justify-center w-full">
-        <div className="bg-shade_5 grow shrink basis-[120px] max-w-24 md:max-w-28 flex aspect-square justify-center rounded-xl overflow-hidden">
-          <img className=" aspect-square" src={profile} alt="" />
+        <div className="bg-gradient-to-r from-shade_1/80  to-shade_1/80  grow shrink basis-[120px] max-w-24 md:max-w-28 flex aspect-square justify-center rounded-xl overflow-hidden">
+          <img className=" object-cover w-full drop-shadow-lg " src={profile} alt="" />
         </div>
         <div className=" grow shrink basis-[300px] w-full flex-col flex gap-2">
           <div className="flex gap-2 justify-center sm:justify-between">

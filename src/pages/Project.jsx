@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useEffect} from "react";
 import { NavLink } from 'react-router-dom';
 import Records from "../data/CaseData";
 
 
 const Project = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  w-full  gap-3'>

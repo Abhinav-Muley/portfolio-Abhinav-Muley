@@ -1,5 +1,6 @@
 import Mockup1 from "/Case/Connectfm/mockup.png";
 import P1 from "/Case/Connectfm/Laptop/1.png";
+import L1 from "/Case/Connectfm/Laptop/logo.png";
 
 const CaseData = [
     {
@@ -7,6 +8,7 @@ const CaseData = [
         Title: "Connectfm",
         mockup: Mockup1,
         image: P1,
+        logo:L1,
         subtitle: "Redesign the website, simplifying its structure and features, to enhance user satisfaction and overall efficiency",
         Problem_Statement:"Redesign the website, simplifying its structure and features, to enhance user satisfaction and overall efficiency",
         Role: "UX Designer"
