@@ -1,9 +1,20 @@
 import React, { useState } from "react";
 import logo from '../assets/logo.png'
 import { NavLink } from 'react-router-dom';
+// import { motion } from "motion/react"
 
 function Header() {
   const [first, setfirst] = useState(false);
+  
+  // const variants = {
+  //   open: {
+  //     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+  //   },
+  //   closed: {
+  //     transition: { staggerChildren: 0.05, staggerDirection: -1 }
+  //   }
+  // };
+
   return (
     <>
       <div className=" lg:w-auto mb-10 lg:mb-2 ">
