@@ -17,13 +17,13 @@ function Services() {
                     <div className="bg-shade_8 text-shade_5 gap-2 p-5 flex justify-center items-center rounded-md text-lg">
                         <div className=" grid place-items-center gap-5">
                             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.49268 14.0361H17.7189M6.49268 18.9137H17.7189M6.49268 23.7912H17.7189M6.49268 28.6687H12.1058" stroke="#CCCCCC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M35.507 35.3242H22.0356M35.507 35.3242V13.8291M35.507 35.3242L22.0356 13.8291M22.0356 35.3242V13.8291M22.0356 35.3242L35.507 13.8291M22.0356 13.8291H35.507" stroke="#916CE7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M37.6535 40.3642H4.3464C2.84989 40.3642 1.63672 39.151 1.63672 37.6545V4.34738C1.63672 2.85087 2.84989 1.6377 4.3464 1.6377H37.6535C39.15 1.6377 40.3632 2.85087 40.3632 4.34738V37.6545C40.3632 39.151 39.15 40.3642 37.6535 40.3642Z" stroke="#CCCCCC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M40.1213 7.84766H1.63672" stroke="#CCCCCC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M12.2764 4.74219H12.2957" stroke="#916CE7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M5.46875 4.74219H5.48811" stroke="#916CE7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.87256 4.74219H8.89192" stroke="#916CE7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.49268 14.0361H17.7189M6.49268 18.9137H17.7189M6.49268 23.7912H17.7189M6.49268 28.6687H12.1058" stroke="#CCCCCC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M35.507 35.3242H22.0356M35.507 35.3242V13.8291M35.507 35.3242L22.0356 13.8291M22.0356 35.3242V13.8291M22.0356 35.3242L35.507 13.8291M22.0356 13.8291H35.507" stroke="#916CE7" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M37.6535 40.3642H4.3464C2.84989 40.3642 1.63672 39.151 1.63672 37.6545V4.34738C1.63672 2.85087 2.84989 1.6377 4.3464 1.6377H37.6535C39.15 1.6377 40.3632 2.85087 40.3632 4.34738V37.6545C40.3632 39.151 39.15 40.3642 37.6535 40.3642Z" stroke="#CCCCCC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M40.1213 7.84766H1.63672" stroke="#CCCCCC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M12.2764 4.74219H12.2957" stroke="#916CE7" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M5.46875 4.74219H5.48811" stroke="#916CE7" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M8.87256 4.74219H8.89192" stroke="#916CE7" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <h2 className='text-center'>UI & UX Design</h2>
                         </div>
@@ -32,11 +32,11 @@ function Services() {
                     <div className="bg-shade_8 text-shade_5 gap-2 p-5 flex justify-center items-center rounded-md text-lg">
                         <div className="grid place-items-center gap-5">
                             <svg width="48" height="38" viewBox="0 0 48 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M33.6743 36.5356L46.9766 19.0007L33.6743 1.46582" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M14.3257 36.5356L1.02336 19.0007L14.3257 1.46582" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M15.5348 16.5811C16.8696 16.5811 17.9534 17.6648 17.9534 18.9997C17.9534 20.3345 16.8696 21.4183 15.5348 21.4183C14.2 21.4183 13.1162 20.3345 13.1162 18.9997C13.1162 17.6648 14.2 16.5811 15.5348 16.5811Z" stroke="#916CE7" stroke-width="2" stroke-linejoin="round" />
-                                <path d="M24.0001 16.5811C25.335 16.5811 26.4188 17.6648 26.4188 18.9997C26.4188 20.3345 25.335 21.4183 24.0001 21.4183C22.6653 21.4183 21.5815 20.3345 21.5815 18.9997C21.5815 17.6648 22.6653 16.5811 24.0001 16.5811Z" stroke="#916CE7" stroke-width="2" stroke-linejoin="round" />
-                                <path d="M32.465 16.5811C33.7998 16.5811 34.8836 17.6648 34.8836 18.9997C34.8836 20.3345 33.7998 21.4183 32.465 21.4183C31.1302 21.4183 30.0464 20.3345 30.0464 18.9997C30.0464 17.6648 31.1302 16.5811 32.465 16.5811Z" stroke="#916CE7" stroke-width="2" stroke-linejoin="round" />
+                                <path d="M33.6743 36.5356L46.9766 19.0007L33.6743 1.46582" stroke="#CCCCCC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M14.3257 36.5356L1.02336 19.0007L14.3257 1.46582" stroke="#CCCCCC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M15.5348 16.5811C16.8696 16.5811 17.9534 17.6648 17.9534 18.9997C17.9534 20.3345 16.8696 21.4183 15.5348 21.4183C14.2 21.4183 13.1162 20.3345 13.1162 18.9997C13.1162 17.6648 14.2 16.5811 15.5348 16.5811Z" stroke="#916CE7" strokeWidth="2" strokeLinejoin="round" />
+                                <path d="M24.0001 16.5811C25.335 16.5811 26.4188 17.6648 26.4188 18.9997C26.4188 20.3345 25.335 21.4183 24.0001 21.4183C22.6653 21.4183 21.5815 20.3345 21.5815 18.9997C21.5815 17.6648 22.6653 16.5811 24.0001 16.5811Z" stroke="#916CE7" strokeWidth="2" strokeLinejoin="round" />
+                                <path d="M32.465 16.5811C33.7998 16.5811 34.8836 17.6648 34.8836 18.9997C34.8836 20.3345 33.7998 21.4183 32.465 21.4183C31.1302 21.4183 30.0464 20.3345 30.0464 18.9997C30.0464 17.6648 31.1302 16.5811 32.465 16.5811Z" stroke="#916CE7" strokeWidth="2" strokeLinejoin="round" />
                             </svg>
                             <h2 className='text-center'>Frontend Development</h2>
                         </div>
