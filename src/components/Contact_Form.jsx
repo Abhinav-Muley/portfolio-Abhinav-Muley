@@ -67,7 +67,7 @@ function Contact_Form() {
 
         <form className=" grid gap-5" action="#" onSubmit={handleSubmit}>
           <div className="">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-shade_5 text-opacity-80 tracking-wider">Your Email</label>
+            <label htmlFor="email" className="block mb-2 text-md font-medium text-shade_5 text-opacity-80 tracking-wider">Your Email</label>
             <input
               type="email"
               id="email"
@@ -81,7 +81,7 @@ function Contact_Form() {
           </div>
 
           <div className="">
-            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-shade_5 text-opacity-80 tracking-wider">Mobile Number</label>
+            <label htmlFor="Phone" className="block mb-2 text-md font-medium text-shade_5 text-opacity-80 tracking-wider">Mobile Number</label>
             <input
               placeholder="Enter Mobile number"
               name="Phone"
@@ -95,7 +95,7 @@ function Contact_Form() {
           </div>
 
           <div className="">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-shade_5 text-opacity-80 tracking-wider">Your Message</label>
+            <label htmlFor="message" className="block mb-2 text-md font-medium text-shade_5 text-opacity-80 tracking-wider">Your Message</label>
             <textarea
               id="message"
               name="message"

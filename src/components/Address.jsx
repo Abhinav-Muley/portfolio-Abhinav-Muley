@@ -14,7 +14,7 @@ function Address() {
                     <h3 className=' text-shade_1 text-xl font-medium w-full'>Address</h3>
                 </div>
                 <div className="">
-                    <div className="bg-shade_8 text-shade_5 gap-2 flex rounded-md p-3 text-base">
+                    <div className="bg-shade_8 gap-2 flex rounded-md p-3 text-shade_5 text-lg md:text-lg font-light">
                         Satara road, Chh. Sambhajinagar, Maharashtra - 431002
                     </div>
                 </div>

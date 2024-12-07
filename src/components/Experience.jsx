@@ -20,7 +20,7 @@ function Experience() {
             </span> */}
             <p className="text-shade_1 font-semibold ">xScientist Tech LLP</p>
           </div>
-          <ul className='text-shade_5 m-0 list-disc mx-6  font-light text-sm md:text-lg'>
+          <ul className='text-shade_5 m-0 list-disc mx-6 text-lg md:text-lg font-light'>
             <li>
               Created wireframes, user flows, prototypes and mockups to visualize design concept.
             </li>
@@ -39,7 +39,7 @@ function Experience() {
             </span> */}
             <p className="text-shade_1 font-semibold">Oasis Infobyte</p>
           </div>
-          <ul className=' text-shade_5 m-0 list-disc mx-6 font-light  text-sm md:text-lg'>
+          <ul className=' text-shade_5 m-0 list-disc mx-6 text-lg md:text-lg font-light'>
             <li>
               Developed user interfaces for web applications using HTML, CSS and JavaScript.
             </li>

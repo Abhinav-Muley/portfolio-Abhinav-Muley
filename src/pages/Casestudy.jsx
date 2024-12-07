@@ -2,12 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Records from "../data/CaseData";
 
-
 const Casestudy = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-}, []);
+  }, []);
 
   const { id } = useParams();
   const [caseData, setCaseData] = useState(null);
@@ -27,14 +26,44 @@ const Casestudy = () => {
     return <div className=' text-white'>Loading...</div>;
   }
 
+
+  if (!caseData) {
+    return (
+      <div
+        className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        role="status">
+        <span
+          className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span>
+      </div>
+    );
+  }
+
   return (
     <>
+      {/* <section className='flex flex-col gap-5 xl:gap-10'>
+        <div className="">
+
+          <div className="grid grid-cols-3 gap-5 md:gap-20 px-5 md:px-28 h-[45vh] xl:h-[100vh] bg-shade_8 rounded-lg overflow-hidden">
+            <div className="col-span-2 bg-stone-500 mt-20 rounded-md md:rounded-xl">
+              <div id="elementToAnimate" className="relative p-1 md:p-4 flex justify-center md:shadow-inner shadow-shade_3 z-20">
+        <img src={caseData.Laptop_1_1} className="rounded-sm md:rounded-md shadow-inner" alt="Selected" />
+              </div>
+            </div>
+            <div className="col-span-1 bg-stone-500 mt-32 rounded-md md:rounded-xl">
+              <div id="elementToAnimate" className="relative p-1 md:p-4 flex justify-center md:shadow-inner shadow-shade_3 z-20">
+               <img src={caseData.Android_1_1} className="rounded-sm md:rounded-md shadow-inner" alt="Selected" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
       <section className=' flex flex-col gap-5 xl:gap-20'>
         <div className='grid gap-5 '>
-          {/* <Case1 /> */}
-          <section className=" grid gap-5  w-full --bg-shade_3 bg-gradient-to-t from-shade_4 to-shade_3 overflow-hidden relative rounded-lg">
-            <div className=" absolute mx-auto top-1/4 z-0 w-full">
-              <svg className=' md:w-[80%] mx-auto' viewBox="0 0 277 386" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <section className=" grid gap-5  w-full py-20 --bg-shade_3 bg-gradient-to-t from-shade_4 to-shade_3 overflow-hidden relative rounded-lg">
+            <div className=" absolute mx-auto top-5 md:top-1/4 z-0 w-full">
+              <svg className=' w-[100%] md:w-[80%] mx-auto' viewBox="0 0 277 386" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.18">
                   <rect x="101.849" y="99.1602" width="74.6456" height="186.252" rx="37.3228" stroke="black" strokeWidth="2" />
                   <rect x="101.849" y="99.1602" width="74.6456" height="186.252" rx="37.3228" stroke="white" strokeWidth="2" />
@@ -57,18 +86,17 @@ const Casestudy = () => {
                 </g>
               </svg>
             </div>
-            <h1 className='absolute top-2 z-0 text-center text-4xl w-full'>{caseData.Title}</h1>
-            <div className="bottom mt-[14%] sm:mt-[10%] flex justify-center relative h-[40vh] sm:h-[70vh] md:h-[60vh] xl:h-[70vh] 2xl:h-[70vh]">
-              <div id="elementToAnimate" className=" absolute w-3/4 sm:w-2/4 flex justify-center rounded-md shadow-lg shadow-shade_3 z-20 ">
-                <img src={caseData.image} className="rounded-md" alt="" />
+            {/* <h1 className='absolute top-2 z-0 text-center text-4xl w-full'>{caseData.Title}</h1> */}
+            <div className="bottom flex justify-center items-center relative h-[25vh] sm:h-[70vh] md:h-[60vh] xl:h-[70vh] 2xl:h-[70vh]">
+              <div id="elementToAnimate" className=" absolute p-3 md:p-0 sm:w-3/5 flex justify-center rounded-md  z-20 ">
+                <img src={caseData.mockup} className="rounded-md" alt="" />
               </div>
             </div>
           </section>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 '>
-          <section className="grid gap-5 ">
+          <div className="grid gap-5 ">
             <div className="grid grid-row-4 gap-3 md:gap-5">
-
               <div className=" flex items-center gap-5">
                 <div className=" h-full w-full py-5 sm:py-10 px-3 flex justify-center items-center rounded-lg bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_5 border-opacity-20">
                   <img src={caseData.logo} className=" w-[80%]" alt="" />
@@ -118,19 +146,21 @@ const Casestudy = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
 
-          <section className=" grid gap-5 ">
+          <div className=" grid gap-5 ">
             <div className=" grid grid-row-4 gap-3 md:gap-5 ">
-              <div className="grid h-full p-5 items-center rounded-lg bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_5 border-opacity-20">
+              <div className="grid h-full items-center p-5 rounded-lg bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_5 border-opacity-20">
+                {/* <div className="heading bg-clip-text text-transparent bg-gradient-to-r from-shade_1 to-shade_5 font-semibold text-xl sm:text-md row-start-1">Components</div> */}
                 <img src={caseData.mockup} className="" alt="" />
+                {/* <div className=" h-full"> */}
+                {/* </div> */}
               </div>
             </div>
-          </section>
+          </div>
 
-          <section className=" grid gap-3 md:gap-5 col-span-1 sm:col-span-2 lg:col-span-1">
+          <div className=" grid gap-3 md:gap-5 col-span-1 sm:col-span-2 lg:col-span-1">
             <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3 md:gap-5 ">
-
               <div className="grid rounded-lg p-5 h-full gap-3 overflow-hidden bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_5 border-opacity-20">
                 <div className="heading bg-clip-text text-transparent bg-gradient-to-r from-shade_1 to-shade_5 font-semibold text-xl sm:text-md ">Typography</div>
                 <svg className="h-28" viewBox="0 0 226 104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,19 +178,19 @@ const Casestudy = () => {
                   <div className=" h-10 xl:h-12 w-[30%] sm:w-[34%] md:w-[29%] xl:w-[25%]  -ml-3 md:-ml-5 shadow-md shadow-black rounded-full bg-[#D9D9D9]"></div>
                   <div className=" h-10 xl:h-12 w-[30%] sm:w-[34%] md:w-[29%] xl:w-[25%]  -ml-3 md:-ml-5 shadow-md shadow-black rounded-full bg-[#FFFFFF]"></div>
                 </div>
-
               </div>
 
-              <div className="grid md:col-span-2 lg:col-span-1 p-5 items-center rounded-lg overflow-hidden bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_5 border-opacity-20">
-                {/* <video src={video} className="" type="video/mp4" autoPlay muted> */}
-                <img src={caseData.mockup} alt="" />
+              <div className="grid md:col-span-2 justify-center lg:col-span-1 items-center rounded-lg overflow-hidden bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_5 border-opacity-20">
+                {/* <video src={caseData.video} className=" bg-transparent" type="video/mp4" autoPlay muted> */}
+                <img src={caseData.video} className=' w-full bg-cover'  alt="" />
                 {/* </video> */}
               </div>
             </div>
-          </section>
+          </div>
         </div>
 
       </section>
+
     </>
   );
 }

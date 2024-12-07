@@ -10,7 +10,7 @@ function About() {
         <p className="text-shade_1 font-medium text-lg">About</p>
       </div>
       <div className="">
-        <div className="text-shade_5  text-sm md:text-lg font-light">
+        <div className="text-shade_5 text-lg md:text-lg font-light">
           I'm <strong className=" font-bold">Siddhant Bilange</strong>. I'm a <strong className=" font-bold">UX Designer</strong> with <strong className=" font-bold">1 Year</strong> of experience in
           creating intuitive and visually appealing digital experiences.
           <br /><br />

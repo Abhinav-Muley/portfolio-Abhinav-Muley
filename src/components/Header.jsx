@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+import { motion } from "motion/react"
 import { NavLink } from "react-router-dom";
+import '../index.css';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +13,7 @@ function Header() {
     <>
       <div className="lg:w-auto mb-10 lg:mb-2">
         <div className="px-3 lg:px-10 w-full flex z-50 fixed justify-center max-w-[1600px]">
-          <div className="flex flex-row w-full justify-between bg-shade_2 border-[0.002px] border-shade_5 border-opacity-20 backdrop-blur-sm bg-opacity-65 shadow-md --shadow-shade_2 p-3 rounded-xl">
+          <div className="flex flex-row w-full justify-between bg-shade_7 border-[0.002px] border-shade_5 border-opacity-20 backdrop-blur-sm bg-opacity-90 shadow-md --shadow-shade_2 p-3 rounded-xl">
             {/* Left Section */}
 
             <div className=" block md:hidden justify-between w-full ">
@@ -19,10 +21,38 @@ function Header() {
               <div className=" flex w-full justify-between">
                 <div className="">
                   <NavLink to="/" className="h-10 w-10 grid place-items-center md:hidden">
-                    <img src={logo} alt="Logo" />
+                    <div className=" w-14 h-14">
+                      <svg viewBox="0 0 195 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_di_26_2)">
+                          <path d="M65.7729 65V111.821H7.68116L9.4686 123.44L82.7536 128.802V65H65.7729Z" fill="#D9D9D9" />
+                          <path d="M82.7536 1L5 6.36232V65H21.087V17.9807H82.7536V1Z" fill="#D9D9D9" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M101.522 1V128.802L173.019 123.44L190 62.6667L174.807 6.36232L101.522 1ZM117.609 58.1981V17.9807H161.382L173 58.1981H117.609ZM117.609 111.821V69.8164H171.5L159.882 111.821H117.609Z" fill="#D9D9D9" />
+                          <path d="M65.7729 65V111.821H7.68116L9.4686 123.44L82.7536 128.802V65H65.7729Z" stroke="white" />
+                          <path d="M82.7536 1L5 6.36232V65H21.087V17.9807H82.7536V1Z" stroke="white" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M101.522 1V128.802L173.019 123.44L190 62.6667L174.807 6.36232L101.522 1ZM117.609 58.1981V17.9807H161.382L173 58.1981H117.609ZM117.609 111.821V69.8164H171.5L159.882 111.821H117.609Z" stroke="white" />
+                        </g>
+                        <defs>
+                          <filter id="filter0_di_26_2" x="0.5" y="0.462097" width="194.018" height="136.879" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_26_2" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_2" result="shape" />
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_26_2" />
+                          </filter>
+                        </defs>
+                      </svg>
+                    </div>
                   </NavLink>
                 </div>
-
                 <div
                   className="h-10 md:w-10 flex justify-between md:hidden"
                   onClick={() => setMenuOpen((prev) => !prev)} // Toggle menu
@@ -96,7 +126,7 @@ function Header() {
               {/* Links for Mobile View */}
               {menuOpen && (
 
-                <div className=" h-[70vh] mb-5 mt-10 flex flex-col justify-between">
+                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className=" h-[70vh] header mb-5 mt-10 flex flex-col justify-between">
                   <div className=" ">
                     <ul className="text-lg text-shade_6 font-normal tracking-wide flex flex-col items-center justify-center gap-8 mt-3 py-10 lg:hidden ">
                       <NavLink
@@ -167,7 +197,7 @@ function Header() {
                       </svg>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
               )}
             </div>
@@ -176,7 +206,36 @@ function Header() {
             <ul className="text-lg text-shade_6 font-normal tracking-wide hidden md:flex justify-between w-full h-full ml-5">
               <div className="flex gap-8 items-center w-full h-full">
                 <NavLink to="/" className="h-10 w-10 grid place-items-center">
-                  <img src={logo} alt="Logo" />
+                  <div className=" w-14 h-14">
+                    <svg viewBox="0 0 195 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_di_26_2)">
+                        <path d="M65.7729 65V111.821H7.68116L9.4686 123.44L82.7536 128.802V65H65.7729Z" fill="#D9D9D9" />
+                        <path d="M82.7536 1L5 6.36232V65H21.087V17.9807H82.7536V1Z" fill="#D9D9D9" />
+                        <path fillRule="evenodd" clipRule="evenodd" d="M101.522 1V128.802L173.019 123.44L190 62.6667L174.807 6.36232L101.522 1ZM117.609 58.1981V17.9807H161.382L173 58.1981H117.609ZM117.609 111.821V69.8164H171.5L159.882 111.821H117.609Z" fill="#D9D9D9" />
+                        <path d="M65.7729 65V111.821H7.68116L9.4686 123.44L82.7536 128.802V65H65.7729Z" stroke="white" />
+                        <path d="M82.7536 1L5 6.36232V65H21.087V17.9807H82.7536V1Z" stroke="white" />
+                        <path fillRule="evenodd" clipRule="evenodd" d="M101.522 1V128.802L173.019 123.44L190 62.6667L174.807 6.36232L101.522 1ZM117.609 58.1981V17.9807H161.382L173 58.1981H117.609ZM117.609 111.821V69.8164H171.5L159.882 111.821H117.609Z" stroke="white" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_di_26_2" x="0.5" y="0.462097" width="194.018" height="136.879" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="4" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_26_2" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_2" result="shape" />
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="4" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                          <feBlend mode="normal" in2="shape" result="effect2_innerShadow_26_2" />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
                 </NavLink>
                 <hr className="bg-shade_5 w-[.1px] h-full" />
 
