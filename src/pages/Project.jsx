@@ -11,7 +11,7 @@ const Project = () => {
     <>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  w-full gap-3 md:gap-4'>
         {Records.map((records) => (
-          <NavLink to={`/Casestudy/${records.id}`} key={records.id} className="group bg-shade_3 bg-opacity-40 hover:bg-shade_5 hover:bg-opacity-20 transition-colors ease-in-out border-2 border-shade_3 rounded-xl hover:shadow-lg shadow-shade_5  cursor-pointer  overflow-hidden flex justify-center items-center h-80 relative">
+          <NavLink to={`/Casestudy/${records.id}`} key={records.id} className="group hover:scale-105 transition ease-out duration-100 bg-shade_3 bg-opacity-40 hover:bg-shade_2 hover:z-50 border-2 border-shade_3 rounded-xl hover:shadow-lg shadow-shade_5  cursor-pointer  overflow-hidden flex justify-center items-center h-80 relative">
             <svg className=' h-[50vh]' viewBox="0 0 277 386" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.18">
                 <rect x="101.849" y="99.1602" width="74.6456" height="186.252" rx="37.3228" stroke="black" strokeWidth="2" />
@@ -38,14 +38,19 @@ const Project = () => {
             <div className="group z-20 w-full h-full font-semibold rounded-t-xl overflow-hidden shadow-2xl bottom-0 absolute flex items-end">
               <div className="flex justify-between items-end transition-all duration-300 ease-linear translate-y-0 text-shade_6 bg-gradient-to-t from-shade_3 to-transparent p-5 rounded-lg w-full h-full">
                 <div className="flex justify-between items-center w-full">
-                  <div className=" text-xl sm:text-2xl truncate">
+                  <div className=" w-full">
+                  <div className=" text-2xl truncate">
                     {records.Title}
                   </div>
-                  <div className=" visible lg:invisible group-hover:visible   flex justify-center items-center w-12 h-12 opacity-0 group-hover:opacity-100 -translate-x-[400%] transition-all ease-in-out duration-500 rotate-45 group-hover:translate-x-[0%]  rounded-full bg-shade_1 truncate">
+                  <div className=" group-hover:h-1/3 h-0 transition ease-out duration-500 delay-200 text-base text-gray-400 text-ellipsis w-full  overflow-hidden ">
+                    {records.desc}
+                  </div>
+                  </div>
+                  {/* <div className=" visible lg:invisible group-hover:visible   flex justify-center items-center w-12 h-12 opacity-0 group-hover:opacity-100 -translate-x-[400%] transition-all ease-in-out duration-500 rotate-45 group-hover:translate-x-[0%]  rounded-full bg-shade_1 truncate">
                     <svg width="18" className='' height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M9 1V20M9 1L17 9.14286M9 1L1 9.14286" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

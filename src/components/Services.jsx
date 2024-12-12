@@ -14,7 +14,7 @@ function Services() {
                     <h3 className=' text-shade_1 text-xl font-medium  w-full'>Services</h3>
                 </div>
                 <div className=" grid grid-cols-2 gap-5">
-                    <div className="bg-shade_8 text-shade_5 gap-2 p-5 flex justify-center items-center rounded-md text-lg">
+                    <div className="bg-shade_8 shadow-shade_3 shadow-md text-shade_5 gap-2 p-5 flex justify-center items-center rounded-md text-lg">
                         <div className=" grid place-items-center gap-5">
                             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.49268 14.0361H17.7189M6.49268 18.9137H17.7189M6.49268 23.7912H17.7189M6.49268 28.6687H12.1058" stroke="#CCCCCC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
@@ -29,7 +29,7 @@ function Services() {
                         </div>
                     </div>
 
-                    <div className="bg-shade_8 text-shade_5 gap-2 p-5 flex justify-center items-center rounded-md text-lg">
+                    <div className="bg-shade_8 shadow-shade_3 shadow-md text-shade_5 gap-2 p-5 flex justify-center items-center rounded-md text-lg">
                         <div className="grid place-items-center gap-5">
                             <svg width="48" height="38" viewBox="0 0 48 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M33.6743 36.5356L46.9766 19.0007L33.6743 1.46582" stroke="#CCCCCC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -42,7 +42,7 @@ function Services() {
                         </div>
                     </div>
 
-                    <div className="bg-shade_8 col-span-2 text-shade_5 gap-2 p-5 flex justify-center items-center rounded-md text-lg">
+                    <div className="bg-shade_8 shadow-shade_3 shadow-md col-span-2 text-shade_5 gap-2 p-5 flex justify-center items-center rounded-md text-lg">
                         <div className="grid place-items-center gap-5">
                             <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M39.25 9H34.375C33.944 9 33.5307 9.17121 33.226 9.47595C32.9212 9.7807 32.75 10.194 32.75 10.625C32.75 11.056 32.9212 11.4693 33.226 11.774C33.5307 12.0788 33.944 12.25 34.375 12.25H39.25C40.112 12.25 40.9386 12.5924 41.5481 13.2019C42.1576 13.8114 42.5 14.638 42.5 15.5V35C42.5 35.862 42.1576 36.6886 41.5481 37.2981C40.9386 37.9076 40.112 38.25 39.25 38.25H6.75C5.88805 38.25 5.0614 37.9076 4.4519 37.2981C3.84241 36.6886 3.5 35.862 3.5 35V15.5C3.5 14.638 3.84241 13.8114 4.4519 13.2019C5.0614 12.5924 5.88805 12.25 6.75 12.25H11.625C12.056 12.25 12.4693 12.0788 12.774 11.774C13.0788 11.4693 13.25 11.056 13.25 10.625C13.25 10.194 13.0788 9.7807 12.774 9.47595C12.4693 9.17121 12.056 9 11.625 9H6.75C5.02609 9 3.37279 9.68482 2.15381 10.9038C0.93482 12.1228 0.25 13.7761 0.25 15.5V35C0.25 36.7239 0.93482 38.3772 2.15381 39.5962C3.37279 40.8152 5.02609 41.5 6.75 41.5H39.25C40.9739 41.5 42.6272 40.8152 43.8462 39.5962C45.0652 38.3772 45.75 36.7239 45.75 35V15.5C45.75 13.7761 45.0652 12.1228 43.8462 10.9038C42.6272 9.68482 40.9739 9 39.25 9Z" fill="#CCCCCC" />

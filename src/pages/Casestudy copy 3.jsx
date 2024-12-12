@@ -9,36 +9,46 @@ import Userflow from '../components/userflow';
 const Casestudy = () => {
 
 
-  const { id } = useParams();
-  const [caseData, setCaseData] = useState(Records[0]);
-  const [activeColor, setActiveColor] = useState('red');
-  const [isVisible, setIsVisible] = useState(true);
-  const [Userflow, setUserflow] = useState(Records[0]); // Select the first record by default
-  const [activeIndex, setActiveIndex] = useState(caseData.Userflow.findIndex((Userflow) => Userflow.id === 1));
-  const [activeId, setActiveId] = useState(caseData.Userflow[activeIndex].id);
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
 
   useEffect(() => {
-    const foundCase = Records.find((data) => data.id === Number(id));
-    setCaseData(foundCase);
+    window.scrollTo(0, 0);
+  }, []);
 
+  const { id } = useParams();
+  const [caseData, setCaseData] = useState(null);
+
+  useEffect(() => {
     const elementToAnimate = document.getElementById('elementToAnimate');
     if (elementToAnimate) {
       elementToAnimate.classList.add('fade-in');
     }
+
+
+    const foundCase = Records.find((data) => data.id === Number(id));
+    setCaseData(foundCase);
   }, [id]);
 
+  if (!caseData) {
+    return <div className=' text-white'>Loading...</div>;
+  }
 
-  // const [activeIndex, setActiveIndex] = useState(null); // State to track the active button index
 
-  const handleButtonClick = (index, id) => {
-    setActiveIndex(index);
-    setActiveId(id);
-    console.log(`Button clicked with id: ${id}`);
+
+
+
+  // Userflow
+
+  const [activeColor, setActiveColor] = useState('red');
+  const [isVisible, setIsVisible] = useState(true);
+  const [Userflow, setUserflow] = useState(Records[0]); // Select the first record by default
+
+  const handleButtonClick = (color) => {
+    setIsVisible(false); // Start the fade-out effect
+    setTimeout(() => {
+      setActiveColor(color);
+      setIsVisible(true); // Start the fade-in effect
+    }, 500); // Match this duration with the CSS transition duration
   };
-
 
 
   if (!caseData) {
@@ -143,9 +153,8 @@ const Casestudy = () => {
                 <div className="grid gap-3 h-full rounded-lg p-5 overflow-hidden bg-shade_3 bg-opacity-40 border-[0.002px] border-shade_5 border-opacity-20">
                   <div className="heading bg-clip-text text-transparent bg-gradient-to-r from-shade_1 to-shade_5 font-semibold text-lg sm:text-md md:text-xl row-start-1">Design Process</div>
                   <div className=" grid  gap-5 grid-cols-1 md:grid-cols-2">
-
                     {caseData.Typography.map((Typography, TypographyIndex) => (
-                      <div key={TypographyIndex} className=" bg-shade_3  flex items-center gap-5 px-4 py-4 rounded-2xl shadow-inner shadow-shade_4">
+                      <div key={TypographyIndex} className="bg-shade_3  flex items-center gap-5 px-4 py-4 rounded-2xl shadow-inner shadow-shade_4">
                         {/* <div className=" flex justify-center items-center text-4xl font-bold shadow-inner shadow-shade_2 rounded-md text-shade_5 bg-shade_4 px-2 py-2">
                           Aa
                         </div> */}
@@ -167,6 +176,7 @@ const Casestudy = () => {
                               {Typography.Weight3}
                             </span>
                           </div>
+
                         </div>
                       </div>
                     ))}
@@ -218,37 +228,83 @@ const Casestudy = () => {
                     </div>
                     </div> */}
           </div>
-          <div className=" grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-5 relative h-full overflow-hidden">
-            {caseData.Userflow && caseData.Userflow.map((Userflow, UserflowIndex) => (
-              <div className="grid gap-0">
-                <div className="relative flex justify-center items-center h-full rounded-lg overflow-hidden">
-                  {/* Buttons Section */}
-                  <div key={UserflowIndex} className="relative flex gap-5">
-                    <div className="flex items-center rounded-lg bg-shade_1">
-                      <div className={`p-[2px] bg-gradient-to-r rounded-lg ${activeIndex === UserflowIndex ? 'from-shade_2 via-shade_1 to-shade_2' : 'from-shade_2 via-shade_4 to-shade_2'}`}>
-                        <button
-                          className="bg-shade_4 shadow-inner shadow-shade_2 text-white p-2 rounded w-full h-[5rem]"
-                          onClick={() => handleButtonClick(UserflowIndex, Userflow.id)} // Pass the index and id to the click handler
-                        >
-                          {Userflow.Desc}
-                        </button>
-                      </div>
-                    </div>
+
+
+          {/* <Userflow /> */}
+
+          {/* Userflow */}
+
+
+
+
+
+          {caseData.Userflow.map(({ Title, Desc, Mock }) => (
+            <div className="grid grid-cols-2 rounded-lg overflow-hidden min-h-[70vh]">
+              {/* Buttons Section */}
+              <div className="grid grid-cols-1 gap-10">
+                <div key={Title} className="flex items-center rounded-lg overflow-hidden">
+                  <div className={`p-[2px] bg-gradient-to-r w-full rounded-lg ${activeColor === 'red' ? 'from-shade_2 via-shade_1 to-shade_2' : 'from-shade_2 via-shade_4 to-shade_2'}`}>
+                    <button
+                      className="bg-shade_4 shadow-inner shadow-shade_2 text-white p-2 rounded w-full h-[5rem]"
+                      onClick={() => handleButtonClick('red')}
+                    >
+                      {Desc}
+                      {Mock}
+                    </button>
                   </div>
-                  <div className={`line w-full h-1 mt-1 ${activeIndex === UserflowIndex ? 'bg-gradient-to-r from-shade_2 via-shade_1 to-shade_2' : 'bg-shade_4'}`}>
-                  </div>
-                </div>
-                {/* Containers Section */}
-                <div className={`absolute top-0 right-0 h-[100vh] z-20 w-1/2 flex bg-shade_4 rounded-xl ${activeIndex === UserflowIndex ? 'opacity-100' : 'opacity-0'} ${activeIndex === UserflowIndex ? 'block' : 'hidden'}`}>
-                  <div className={`w-full h-full border-2 border-shade_3 rounded-lg p-4 transition-opacity duration-500 ${activeIndex === UserflowIndex ? 'opacity-100' : 'opacity-0'} ${activeIndex === UserflowIndex ? 'block' : 'hidden'}`}>
-                    <img src={Userflow.Mock} alt="" />
-                  </div>
+                  <div
+                    className={`line w-full h-1 mt-1 ${activeColor === 'red' ? 'bg-gradient-to-r from-shade_2 via-shade_1 to-shade_2' : 'bg-shade_4'}`}
+                  ></div>
                 </div>
               </div>
-            ))}
-          </div>
+
+              {/* Containers Section */}
+              <div className="flex h-full w-full bg-shade_4 rounded-xl">
+                {/* {caseData.Userflow.map(({ Title, Desc, Mock }) => ( */}
+                <div
+                  key={Title}
+                  className={`w-full h-full border-2 border-shade_3 rounded-lg p-4 transition-opacity duration-500 ${activeColor === 'red' && isVisible ? 'opacity-100' : 'opacity-0'} ${activeColor === 'red' ? 'block' : 'hidden'}`}
+                >
+                  {Title}
+                </div>
+                {/* ))} */}
+              </div>
+            </div>
+          ))}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
-      </section >
+      </section>
     </>
   );
 }

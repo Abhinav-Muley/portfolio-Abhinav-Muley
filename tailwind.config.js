@@ -75,11 +75,17 @@ export default {
     					opacity: '1',
     					transform: 'translateX(0) rotate(45deg)'
     				}
+    			},
+    			'border-beam': {
+    				'100%': {
+    					'offset-distance': '100%'
+    				}
     			}
     		},
     		animation: {
     			ping: 'ping 1.3s linear infinite',
-    			slideAndDissolve: 'slideAndDissolve 2s ease-in-out'
+    			slideAndDissolve: 'slideAndDissolve 2s ease-in-out',
+    			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
     		},
     		borderRadius: {
     			lg: 'var(--radius)',

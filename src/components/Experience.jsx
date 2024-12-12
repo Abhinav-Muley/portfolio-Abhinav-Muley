@@ -12,7 +12,7 @@ function Experience() {
           Experience
         </p>
       </div>
-      <div className=" main flex flex-col gap-5 text-lg">
+      <div className=" main flex flex-col gap-5 text-base">
         <div className=" ">
           <div className="flex items-center w-fit gap-2 py-[2px] px-2 pr-3 ">
             {/* <span className="p-1 rounded-full bg-shade_4">
@@ -20,7 +20,7 @@ function Experience() {
             </span> */}
             <p className="text-shade_1 font-semibold ">xScientist Tech LLP</p>
           </div>
-          <ul className='text-shade_5 m-0 list-disc mx-6 text-lg md:text-lg font-light'>
+          <ul className='text-shade_5 m-0 list-disc mx-6 text-base md:text-lg font-light'>
             <li>
               Created wireframes, user flows, prototypes and mockups to visualize design concept.
             </li>
@@ -39,7 +39,7 @@ function Experience() {
             </span> */}
             <p className="text-shade_1 font-semibold">Oasis Infobyte</p>
           </div>
-          <ul className=' text-shade_5 m-0 list-disc mx-6 text-lg md:text-lg font-light'>
+          <ul className=' text-shade_5 m-0 list-disc mx-6 text-base md:text-lg font-light'>
             <li>
               Developed user interfaces for web applications using HTML, CSS and JavaScript.
             </li>
